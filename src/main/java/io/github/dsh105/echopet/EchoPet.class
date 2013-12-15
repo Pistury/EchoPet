@@ -107,7 +107,7 @@ public class EchoPet extends JavaPlugin {
 
         // Make sure that the plugin is running under the correct version to prevent errors
         if (!(Version.getNMSPackage()).equalsIgnoreCase(ReflectionUtil.getVersionString())) {
-            ConsoleLogger.log(ChatColor.RED + "EchoPet " + ChatColor.GOLD
+            ConsoleLogger.log(ChatColor.RED + "Pets " + ChatColor.GOLD
                     + this.getDescription().getVersion() + ChatColor.RED
                     + " is only compatible with:");
             ConsoleLogger.log(ChatColor.RED + "    " + Version.getMinecraftVersion() + "-" + Version.getCraftBukkitVersion() + ".");
@@ -120,7 +120,7 @@ public class EchoPet extends JavaPlugin {
         PluginManager manager = getServer().getPluginManager();
 
         configManager = new YAMLConfigManager(this);
-        String[] header = {"EchoPet By DSH105", "---------------------",
+        String[] header = {"EchoPet By Pisturygamer", "---------------------",
                 "Configuration for EchoPet 2",
                 "See the EchoPet Wiki before editing this file"};
         try {
@@ -140,7 +140,7 @@ public class EchoPet extends JavaPlugin {
             Logger.log(Logger.LogLevel.WARNING, "Configuration File [pets.yml] generation failed.", e, true);
         }
 
-        String[] langHeader = {"EchoPet By DSH105", "---------------------",
+        String[] langHeader = {"EchoPet By Pisturygamer", "---------------------",
                 "Language Configuration File"};
         try {
             langConfig = configManager.getNewConfig("language.yml", langHeader);
